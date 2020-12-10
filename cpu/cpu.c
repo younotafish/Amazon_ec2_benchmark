@@ -13,11 +13,11 @@ void cpu_measure()
 //    rdtsc_overhead();
 //    loop_overhead();
 //    procedureCall_overhead();
-    systemCall_overhead();
-    //processCreate_overhead();
-    //threadCreate_overhead();
-    //processSwitch_overhead();
-    //threadSwitch_overhead();
+//    systemCall_overhead();
+//    processCreate_overhead();
+//    threadCreate_overhead();
+//    processSwitch_overhead();
+    threadSwitch_overhead();
 
 }
 
@@ -153,7 +153,7 @@ void processCreate_overhead()
             exit(0);
         else
         {
-            wait(NULL);
+            wait(NULL);   //recall child process
         }
     }
     end = rdtsc_end();
@@ -173,7 +173,7 @@ void threadCreate_overhead()
     for(int i=0; i<10000; i++)
     {
         pthread_create(&td, NULL, runThread, NULL);
-        pthread_join(td, NULL);
+        pthread_join(td, NULL);   //force switch
     }
     end = rdtsc_end();
     printf("The average overhead for pthread_create() is %f cpu cylces\n", (double)(end - start) / 10000.0);
@@ -209,7 +209,7 @@ void processSwitch_overhead()
     unsigned long sum = 0;
     for(int i=0; i<10000; i++)
     {
-        unsigned long res = processSwithchTime(fd);
+        unsigned long res = processSwithchTime(fd);   //res is the time pass
         if(res > 0)
             sum += res;
     }
