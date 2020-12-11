@@ -3,7 +3,7 @@
 
 int main()
 {
-    memory_measure();
+    page_fault_service();
 	return 0;
 }
 

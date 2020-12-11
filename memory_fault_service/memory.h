@@ -23,5 +23,6 @@ static unsigned long inline rdtsc_end(void) {
     return (((unsigned long)hi << 32) | lo);
 }
 
-void memory_measure();
+
+void page_fault_service();
 #endif

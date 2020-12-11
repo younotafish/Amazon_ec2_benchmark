@@ -18,7 +18,7 @@ void page_fault_service() {
             printf("open file failed\n");
             exit(-1);
         }
-        const int OFFSET = 4096*20; //20 KB
+        const int OFFSET = 4096*20;  //20 KB
         const int FILE_SIZE = 268435456*4; //256M
         const int times = FILE_SIZE / OFFSET;
         char* map =(char*) mmap(NULL, FILE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, f, 0);
@@ -38,6 +38,3 @@ void page_fault_service() {
 }
 
 
-void memory_measure() {
-    page_fault_service();
-}
