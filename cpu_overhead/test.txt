@@ -1,0 +1,12 @@
+CPU cycles per second: 2399954581
+Measurement overhead: 68 cycles
+Loop overhead: 6.350889 cycles per iteration
+Function call overhead for func0: 6.228435 cycles
+Function call overhead for func1: 6.317052 cycles
+Function call overhead for func2: 6.349563 cycles
+Function call overhead for func3: 6.475797 cycles
+Function call overhead for func4: 6.392004 cycles
+Function call overhead for func5: 7.435056 cycles
+Function call overhead for func6: 8.076144 cycles
+Function call overhead for func7: 9.119760 cycles
+GetPID System call overhead: 12351 cpu cycles
