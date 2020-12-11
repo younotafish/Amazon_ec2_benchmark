@@ -1,6 +1,3 @@
-//
-// Created by Push on 11/19/18.
-//
 
 #include <stdio.h>
 #include <unistd.h>
