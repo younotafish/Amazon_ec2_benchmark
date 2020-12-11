@@ -1,0 +1,16 @@
+Reading 1 bytes in 66 cycles
+Writing 1 bytes in 81 cycles
+Reading 10 bytes in 49356 cycles
+Writing 10 bytes in 49254 cycles
+Reading 100 bytes in 519165 cycles
+Writing 100 bytes in 662553 cycles
+Reading 1000 bytes in 3622731 cycles
+Writing 1000 bytes in 4117935 cycles
+Reading 10000 bytes in 24998523 cycles
+Writing 10000 bytes in 48373089 cycles
+Reading 100000 bytes in 167013399 cycles
+Writing 100000 bytes in 333857640 cycles
+Reading 1000000 bytes in 332839194 cycles
+Writing 1000000 bytes in 499421499 cycles
+Reading 10000000 bytes in 1954484565 cycles
+Writing 10000000 bytes in 2287589463 cycles
